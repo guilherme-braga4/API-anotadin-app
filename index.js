@@ -1,8 +1,12 @@
-const {Aviao} = require('./aviao')
+const express = require('express');
+const app = express();
 
-console.log(Aviao)
+const port = 8080
 
-const plane = new Aviao("777 Max", "Boing", "Querosene")
-//plane = Aviao
+app.get('/login', ((req, res) => {
+    res.status(200).send('Hello World')
+}))
 
-console.log(plane.myPlane())
+app.listen(port, (req, res) => {
+  console.log("Estou rodando na porta 8080")
+})
