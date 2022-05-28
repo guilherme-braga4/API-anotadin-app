@@ -6,5 +6,9 @@ Route.group(() => {
   Route.put('user/:id', 'UsersController.update')
   Route.post('user/', 'UsersController.store')
   Route.delete('user/:id', 'UsersController.delete')
+
+  Route.post('login', 'AuthController.login')
+  
 }
 ).prefix('api')
+
