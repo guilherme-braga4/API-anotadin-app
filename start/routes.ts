@@ -1,5 +1,4 @@
 import Route from '@ioc:Adonis/Core/Route'
-import UsersController from '../app/Controllers/Http/UsersController'
 
 Route.group(() => {
   Route.get('user', 'UsersController.index')
@@ -8,6 +7,11 @@ Route.group(() => {
   Route.delete('user/:id', 'UsersController.delete')
 
   Route.post('login', 'AuthController.login')
+
+  Route.get('cripto', 'CriptosController.index')
+  Route.put('cripto/:id', 'CriptosController.update')
+  Route.post('cripto/', 'CriptosController.store')
+  Route.delete('cripto/:id', 'CriptosController.delete')
   
 }
 ).prefix('api')

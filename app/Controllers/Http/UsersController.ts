@@ -49,7 +49,7 @@ export default class UsersController {
       response.status(200).send({message: "Usuário criado com sucesso", data: data})
     }
       catch (err) {
-        response.status(400).send({message: "Não foi possível atualizar o usuário ", data: err})
+        response.status(400).send({message: "Não foi possível Criar o usuário ", data: err})
       }
   }
 
@@ -62,7 +62,7 @@ export default class UsersController {
      await user.delete()
      return response.status(200).send({message: "Usuário deletado com sucesso", data: user})
     } catch (err) {
-      response.status(400).send({message: "Não foi possível atualizar o usuário ", data: err})
+      response.status(400).send({message: "Não foi possível Deletar o usuário ", data: err})
     }
      
   }
