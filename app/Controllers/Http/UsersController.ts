@@ -1,9 +1,9 @@
-import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
+// import type { HttpContextContract } from '@ioc:Adonis/Core/HttpContext'
 import User from '../../Models/User'
 
 export default class UsersController {
 
-  public async index({request, response}) {
+  public async index({response}) {
     try {
       console.log("Controller User - Método Index")
       // const paramters = request.paramters()
@@ -30,7 +30,7 @@ export default class UsersController {
      const data = request.body()
      const params = request.params()
      console.log("data", data)
-     const user = await User.query().where('id', params.id).update(data)
+     await User.query().where('id', params.id).update(data)
 
     response.status(200).send({message: "Uusário atualizado com sucesso", data: data})
   }

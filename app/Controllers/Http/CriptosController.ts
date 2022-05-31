@@ -2,7 +2,7 @@
 import Cripto from '../../Models/Cripto'
 
 export default class CriptosController {
-  public async index({request, response}) {
+  public async index({response}) {
     try {
       console.log("Controller Cripto - Método Index")
       // const paramters = request.paramters()
@@ -29,7 +29,7 @@ export default class CriptosController {
      const data = request.body()
      const params = request.params()
      console.log("data", data)
-     const user = await Cripto.query().where('id', params.id).update(data)
+     await Cripto.query().where('id', params.id).update(data)
 
     response.status(200).send({message: "Registro de Criptomoeda atualizada com sucesso", data: data})
   }
