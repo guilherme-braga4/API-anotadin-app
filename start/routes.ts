@@ -12,7 +12,7 @@ Route.group(() => {
   Route.put('cripto/:id', 'CriptosController.update')
   Route.post('cripto/', 'CriptosController.store')
   Route.delete('cripto/:id', 'CriptosController.delete')
-  
+
 }
-).prefix('api')
+).prefix('api').middleware('auth')
 
