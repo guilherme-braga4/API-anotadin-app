@@ -23,6 +23,9 @@ export default class Cripto extends BaseModel {
   @column()
   public quantidade: number
 
+  @column()
+  public image: string
+
   @column.dateTime({ autoCreate: true })
   public createdAt: DateTime
 

@@ -22,6 +22,21 @@ export default class CriptosController {
   }
 }
 
+public async show({response, request}) {
+  try {
+    console.log("Controller Cripto - Método Index")
+    const paramters = request.params()
+    console.log('params', paramters)
+
+    const criptos = await Cripto.query().where('user_id', paramters.id)
+
+    response.status(200).send({message: "Retornando todas as Criptomoedas desse Usuário", data: criptos})
+  }
+  catch (err) {
+    response.status(200).send({message: "Algo deu errado!" + err})
+}
+}
+
 
   public async update({request, response}) {
     try {
@@ -48,7 +63,7 @@ export default class CriptosController {
       response.status(200).send({message: "Registro de Criptomoeda criado com sucesso", data: data})
     }
       catch (err) {
-        response.status(400).send({message: "Não foi possível Criar esse Registro de Criptomoeda ", data: err})
+        response.status(400).send({message: "Não foi possível Criar esse Registro de Criptomoeda ", error: err})
       }
   }
 
@@ -61,7 +76,7 @@ export default class CriptosController {
      await user.delete()
      return response.status(200).send({message: "Registro de Criptomoeda deletado com sucesso", data: user})
     } catch (err) {
-      response.status(400).send({message: "Não foi possível deletar esse Registro de Criptomoeda", data: err})
+      response.status(400).send({message: "Não foi possível deletar esse Registro de Criptomoeda", error: err})
     }
      
   }
