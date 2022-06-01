@@ -72,11 +72,13 @@ public async show({response, request}) {
     try {
      console.log("Controller Cripto - Método Delete")
      const params = request.params()
+     console.log("params", params)
      const user = await Cripto.findOrFail(params.id)
+     console.log("user", user)
      await user.delete()
      return response.status(200).send({message: "Registro de Criptomoeda deletado com sucesso", data: user})
     } catch (err) {
-      response.status(400).send({message: "Não foi possível deletar esse Registro de Criptomoeda", error: err})
+      response.status(400).send({message: "Não foi possível deletar esse Registro de Criptomoeda" + err})
     }
      
   }
