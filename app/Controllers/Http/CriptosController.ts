@@ -44,7 +44,7 @@ public async show({response, request}) {
      const data = request.body()
      const params = request.params()
      console.log("data", data)
-     await Cripto.query().where('id', params.id).update(data)
+     await Cripto.query().where('id', data.id).where('user_id', params.id).update(data)
 
     response.status(200).send({message: "Registro de Criptomoeda atualizada com sucesso", data: data})
   }
