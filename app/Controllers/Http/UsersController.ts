@@ -23,6 +23,21 @@ export default class UsersController {
   }
 }
 
+  public async show({response, request}) {
+    try {
+      console.log("Controller User - Método Show")
+      const paramters = request.params()
+      console.log('params', paramters)
+
+      const criptos = await User.query().where('id', paramters.id)
+
+      response.status(200).send({message: "Retornando todas as informações desse Usuário", data: criptos})
+    }
+    catch (err) {
+      response.status(200).send({message: "Algo deu errado!" + err})
+  }
+  }
+
 
   public async update({request, response}) {
     try {
