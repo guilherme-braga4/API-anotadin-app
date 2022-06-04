@@ -5,6 +5,7 @@ export default class Cripto extends BaseModel {
   @column({ isPrimary: true })
   public id: number
 
+  @column()
   public user_id: number
 
   @column()

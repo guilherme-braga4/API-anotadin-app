@@ -63,7 +63,8 @@ public async show({response, request}) {
       response.status(200).send({message: "Registro de Criptomoeda criado com sucesso", data: data})
     }
       catch (err) {
-        response.status(400).send({message: "Não foi possível Criar esse Registro de Criptomoeda ", error: err})
+        response.status(400).send({message: "Não foi possível Criar esse Registro de Criptomoeda " + err})
+        console.log(err)
       }
   }
 
