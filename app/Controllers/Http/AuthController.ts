@@ -9,7 +9,7 @@ export default class AuthController {
     const email = request.input('email')
     const password = request.input('password')
     console.log(email, password)
-  
+      
     try {
       const user = await User.findBy('email', email)
 
