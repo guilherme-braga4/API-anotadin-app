@@ -1,8 +1,8 @@
-build
+# build
 coverage
 .vscode
 .DS_STORE
 .env
 tmp
 node_modules
-package-lock.json
+# package-lock.json
