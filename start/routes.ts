@@ -3,7 +3,7 @@ import Route from '@ioc:Adonis/Core/Route'
 
 Route.post('api/login', 'AuthController.login')
 Route.post('api/user/', 'UsersController.store')
-//
+///
 
 
 Route.group(() => {
