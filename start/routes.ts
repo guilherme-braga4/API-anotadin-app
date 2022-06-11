@@ -4,6 +4,7 @@ import Route from '@ioc:Adonis/Core/Route'
 Route.post('api/login', 'AuthController.login')
 Route.post('api/user/', 'UsersController.store')
 ///
+    // "postinstall": "npm run build"
 
 
 Route.group(() => {
