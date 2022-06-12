@@ -35,6 +35,18 @@
     "@adonisjs/view",
     "@adonisjs/mail"
   ],
+  "metaFiles": [
+    ".env",
+    ".adonisrc.json",
+    {
+      "pattern": "resources/views/**/*.edge",
+      "reloadServer": false
+    },
+    {
+      "pattern": "public/**",
+      "reloadServer": false
+    }
+  ],
   "aceProviders": [
     "@adonisjs/repl"
   ]
