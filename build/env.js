@@ -7,7 +7,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.default = Env_1.default.rules({
     HOST: "0.0.0.0",
     PORT: "3333",
-    APP_KEY: C-Wq4bPaULdfqYXeiuv0oMao_50yV1tr,
+    APP_KEY: "C-Wq4bPaULdfqYXeiuv0oMao_50yV1tr",
     APP_NAME: "anotadin-api",
     DRIVE_DISK: "local",
     NODE_ENV: "production"
