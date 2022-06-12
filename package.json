@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "start": "node ace build --production"
+    "start": "node build/server.js",
+    "build": "node ace build --production",
+    "postinstall": "tsc"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.7.0",
