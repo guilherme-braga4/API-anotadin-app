@@ -6,7 +6,7 @@
     "dev": "node ace serve --watch",
     "start": "node build/server.js",
     "build": "tsc",
-    "postinstall": "npm run build"
+    "postinstall": "node ace build --production"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.7.0",
