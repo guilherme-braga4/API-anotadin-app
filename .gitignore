@@ -1,8 +1,7 @@
-# build
+build
 coverage
 .vscode
 .DS_STORE
 .env
 tmp
 node_modules
-env.ts
