@@ -4,9 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "node ace serve --watch",
-    "start": "node build/server.js",
-    "build": "node ace build --production",
-    "postinstall": "tsc"
+    "start": "node ace build --production"
   },
   "devDependencies": {
     "@adonisjs/assembler": "^5.7.0",
@@ -38,9 +36,8 @@
     "proxy-addr": "^2.0.7",
     "reflect-metadata": "^0.1.13",
     "source-map-support": "^0.5.21"
-  },
-  "engines": {
+  },"engines": {
     "npm": "~8.11.0",
-    "node": "16.13.1"
+    "node": "16.15.1"
   }
 }
