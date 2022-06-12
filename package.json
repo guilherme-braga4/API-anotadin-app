@@ -11,6 +11,10 @@
   "devDependencies": {
     "@adonisjs/assembler": "^5.7.0",
     "@adonisjs/ace": "^11.3.1",
+    "@adonisjs/auth": "^8.2.1",
+    "@adonisjs/core": "^5.8.2",
+    "@adonisjs/lucid": "^18.0.0",
+    "@adonisjs/repl": "^3.1.11",
     "@japa/preset-adonis": "^1.0.16",
     "@japa/runner": "^2.0.8",
     "adonis-preset-ts": "^2.1.0",
