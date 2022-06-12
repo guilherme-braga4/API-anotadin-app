@@ -5,3 +5,4 @@ coverage
 .env
 tmp
 node_modules
+env.ts
