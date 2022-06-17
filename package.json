@@ -8,13 +8,13 @@
     "start": "node server.js"
   },
   "devDependencies": {
-    "@adonisjs/assembler": "^5.7.0",
     "@adonisjs/ace": "^11.3.1",
+    "@adonisjs/assembler": "^5.7.0",
     "@adonisjs/auth": "^8.2.1",
-    "@adonisjs/core": "^5.8.2",
+    "@adonisjs/core": "^5.8.3",
     "@adonisjs/lucid": "^18.0.0",
-    "@adonisjs/repl": "^3.1.11",
     "@adonisjs/mail": "^7.2.4",
+    "@adonisjs/repl": "^3.1.11",
     "@japa/preset-adonis": "^1.0.16",
     "@japa/runner": "^2.0.8",
     "adonis-preset-ts": "^2.1.0",
@@ -24,12 +24,12 @@
     "youch-terminal": "^2.1.4"
   },
   "dependencies": {
-    "@adonisjs/assembler": "^5.7.0",
     "@adonisjs/ace": "^11.3.1",
+    "@adonisjs/assembler": "^5.7.0",
     "@adonisjs/auth": "^8.2.1",
-    "@adonisjs/core": "^5.8.2",
-    "@adonisjs/mail": "^7.2.4",
+    "@adonisjs/core": "^5.8.3",
     "@adonisjs/lucid": "^18.0.0",
+    "@adonisjs/mail": "^7.2.4",
     "@adonisjs/repl": "^3.1.11",
     "luxon": "^2.4.0",
     "mysql": "^2.18.1",
